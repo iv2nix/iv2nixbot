@@ -14,10 +14,6 @@ function mc(h) {
             h.bot.sendErr("[Filter] Please enter a valid regex!");
             return;
         }
-        if(args2 === ".*") {
-            h.bot.sendErr("[Filter] Abuse detected. Process cancelled.");
-            return;
-        }
         h.bot.filter.add(args2);
     }else if(args1 === "remove") {
         if(!args2 || !validateRegex(args2)) {
