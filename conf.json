@@ -1,0 +1,38 @@
+{
+    "trustedRoleId": "1263313861503881276",
+    "guildId": "1263061189131505715",
+    "prefix": "iv2n:",
+    "name": "&aiv2nix&9Bot&7™",
+    "nameWithoutColorCodes": "iv2nixBot™",
+    "creator": "&aiv2nix&7 (previously known as&9 GaryStens&7)",
+    "creatorWithoutColorCodes": "iv2nix (previously known as GaryStens)",
+    "srvrs": [
+        {
+            "host": "play.kaboom.pw",
+            "port": 25565
+        },
+        {
+            "host": "play.chipmunk.land",
+            "port": 25565
+        },
+        {
+            "host": "168.100.225.224",
+            "port": 25565
+        }
+    ],
+    "archivedSrvrs": [
+        
+    ],
+    "cmdCore": {
+        "layers": 7
+    },
+    "discord": {
+        "prefix": "!",
+        "srvrs": {
+            "play.kaboom.pw:25565": "1263313424927166566",
+            "play.chipmunk.land:25565": "1263313665399062560"
+        },
+        "spamsize": 10000,
+        "invite": "https://discord.gg/RF7Rs3T9nq"
+    }
+}
