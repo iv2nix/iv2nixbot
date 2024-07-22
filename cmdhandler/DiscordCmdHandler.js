@@ -1,8 +1,8 @@
 const conf = require("../conf.json");
 const BaseCmdHandler = require("./BaseCmdHandler.js");
-const {EmbedBuilder} = require("discord.js");
+const { EmbedBuilder } = require("discord.js");
 
-class DiscordCmdHandler extends BaseCmdHandler{
+class DiscordCmdHandler extends BaseCmdHandler {
     constructor(bot, raw, args, msg) {
         super(bot, raw, args);
         
@@ -11,27 +11,23 @@ class DiscordCmdHandler extends BaseCmdHandler{
         this.channelId = msg.channelId;
 
         const entries = Object.entries(conf.discord.srvrs).find(([srvr, channelId]) => channelId === this.channelId);
-        if(!entries) return;
 
         const [srvr] = entries;
         this.srvr = srvr;
 
-        const {bots} = require("../index.js");
-        this.bots = bots;
-
-        const mc = bots[srvr];
-        this.mc = mc;
+        const { bots } = require("../bot.js");
+        this.mc = bots[srvr];
     }
 
     sendErr(err) {
         let embed;
 
-        if(err instanceof Error) {
+        if (err instanceof Error) {
             embed = new EmbedBuilder()
                 .setColor(0xFF0000)
                 .setTitle(err.message)
                 .setDescription(`\`\`\`text\n${err.stack}\`\`\``);
-        }else{
+        } else {
             embed = new EmbedBuilder()
                 .setColor(0xFF0000)
                 .setTitle(err);
