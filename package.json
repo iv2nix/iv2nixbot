@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "@tonejs/midi": "^2.0.28",
+    "axios": "^1.7.2",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "minecraft-protocol": "^1.47.0",
+    "randomstring": "^1.3.0",
+    "vec3": "^0.1.10"
+  },
+  "name": "iv2nixbot",
+  "version": "2.5.2",
+  "description": "a bot by iv2nix",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iv2nix/iv2nixbot.git"
+  },
+  "keywords": [
+    "bot",
+    "mcp",
+    "bot",
+    "minecraftprotocol",
+    "bot",
+    "minecraft",
+    "protocol",
+    "bot",
+    "mc",
+    "bot",
+    "minecraft",
+    "bot",
+    "utils",
+    "util",
+    "utility",
+    "utilities"
+  ],
+  "author": "iv2nix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iv2nix/iv2nixbot/issues"
+  },
+  "homepage": "https://github.com/iv2nix/iv2nixbot#readme"
+}
